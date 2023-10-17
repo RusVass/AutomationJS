@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+figure {
+  margin: 0;
+}
+input::-moz-focus-inner {
+  border: 0;
+}
+ul,
+ol,
+dd {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+p {
+  margin: 0;
+}
+
+// ------ other ------
+
+
+.container {
+  max-width: 100%;
+  min-width: 300px;
+  padding: 0 10px;
+  margin: 0 auto;
+
+  @media screen and (min-width: $ui-breakpoint-xxs-min) {
+    max-width: 300px;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-xs-min) {
+    max-width: 460px;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-sm-min) {
+    max-width: 540px;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-md-min) {
+    max-width: 740px;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-lg-min) {
+    max-width: 970px;
+  }
+
+  @media screen and (min-width: $ui-breakpoint-xl-min) {
+    max-width: 1180px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

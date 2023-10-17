@@ -1,0 +1,45 @@
+{
+  "name": "AutomationJS",
+  "version": "1.0.0",
+  "description": "group AutomationJS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RusVass/AutomationJS"
+  },
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Vasiliev Ruslan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "browserslist": "^4.21.10",
+    "cypress": "^13.3.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-js-minify": "^0.0.3",
+    "gulp-minify": "^3.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jest": "^29.7.0",
+    "sass": "^1.66.1",
+    "nvm": "^0.0.4"
+  },
+
+  "type": "module",
+
+  "dependencies": {
+
+  }
+
+
+
+}
