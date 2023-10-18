@@ -9,5 +9,5 @@ let i = 0;
 while (n >= 50){
     n = n / 2;
     i++;
-    console.log("ітерація :" + i )
+    console.log("ітерація № :" + i )
 }
