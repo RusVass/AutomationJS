@@ -32,7 +32,7 @@
 
 ************************************************************************************************************************
 
-### Link for GitLab pages:
+### Link for Github pages:
 
 
 [Link](https://vassrus.gitlab.io/-/step-project-forkio/-/jobs/5219575136/artifacts/public/index.html)
