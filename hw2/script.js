@@ -52,9 +52,30 @@ console.log(divider(3, 2)); // виведе у консоль false
 /* 4. Написати функцію, яка рекурсивно виводить в консоль аргумент та збільшує його на 2 якщо аргумент не
 перевищує за значенням число 10 */
 function recursiveAddition(value) {
+ if(value < 0) return
+ if(value === 1) return 2
+ if(value === 10) return ""
+ if(value === 11) return ""
+ return  value + ' ' + recursiveAddition(value + 2 )
+
+}
+
+console.log(recursiveAddition(5))
+console.log(recursiveAddition(2))
+console.log(recursiveAddition(11))
+
+
+
+
+//=====================================================
+// for
+/*
+
+function recursiveAddition(value) {
  for (let i = 1 ; i <= 10; i= i+2){
   if(i < value){
    continue;
+
   }
   console.log(i)
  }
@@ -64,16 +85,31 @@ recursiveAddition(5); // виведе в консоль по черзі 5, 7, 9
 recursiveAddition(11); // не виведе нічого
 
 function recursiveAdditions(value) {
- for (let i = 0 ; i <= 10; i= i+2) {
+ for (let i = 2 ; i < 10; i= i+2) {
   if (i < value) {
    continue;
   }
   console.log(i)
  }
-
-
 }
+recursiveAdditions(2)
+recursiveAdditions(11)
+*/
 
-recursiveAdditions(2); // виведе в консоль по черзі 2, 4, 6, 8, 10
-recursiveAdditions(11); // не виведе нічого
+// function step2(n) {
+//  let i = 1;
+//  do{
+//   i = i + 2
+//   console.log(i)
+//  }while (i<n)
+//
+//
+// }
+// step2(10)
+
+
+//===================
+
+
+
 
