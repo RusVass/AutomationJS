@@ -24,7 +24,7 @@ console.log(typeChecker(true, 5)); // виведе There are no type matches for
 позитивне, та No якщо воно негативне */
 function isNegative(value) {
 
-    let num = (value === -1) ? "Yes" : "No";
+    let num = (value < 1) ? "Yes" : "No";
     console.log(num)
 
 }
