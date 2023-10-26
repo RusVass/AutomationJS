@@ -38,7 +38,7 @@ console.log(arr); // [1, 2, 3]
  - прибарає всі займі пробіли (два і більше підряд)
  - кожне речення починає з великої букви, а всі наступні символи в речені робить маленькими*/
 function formatText(text) {
-    const arr = text.split(/[.!?]/)
+    const arr = text.split(/[.]/)
     const newContent = arr.map(elem => {
         const gap = elem.trim()
         const upCont = gap.charAt(0).toUpperCase()
@@ -48,7 +48,7 @@ function formatText(text) {
     return newContent.join(". ");
 }
 
-console.log(formatText("heLLo, this is My teXT.   have A NiCe DaY  ")); // "Hello, this is my text. Have a nice day"
+console.log(formatText("heLLo, this! is My teXT.   have A NiCe DaY  ")); // "Hello, this is my text. Have a nice day"
 console.log(formatText(" Hello woRld   ")); // "Hello worWorld
 
 /**3. Написати функцію, яка поверне число голосних букв в строкі */
