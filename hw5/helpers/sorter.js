@@ -1,4 +1,10 @@
 export default function sortBySalary(arrayOfDevs) {
-    return arrayOfDevs.
-    sort((a, b) => a.salary === b.salary ? a.id - b.id : a.salary - b.salary)
+   arrayOfDevs.sort((a, b) => {
+      if(a.salary === b.salary){
+          return a.id - b.id
+        } else {
+            return a.salary - b.salary
+        }
+        })
+    return arrayOfDevs
 }

@@ -13,10 +13,5 @@ export class Employee {
             return `Salaries are equal`
         }
 
-        // return  userId_1.salary > userId_2.salary  ?
-        //         `User with ${userId_1.id} has greater salary` :
-        //         userId_1.salary < userId_2.salary  ?
-        //         `User with ${userId_2.id} has greater salary` :
-        //         `Salaries are equal`
     }
 }

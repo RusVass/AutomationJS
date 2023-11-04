@@ -8,10 +8,10 @@ export class Dev extends Employee {
         return `I am a Dev`
     }
 
-    static returnArrayOfDevs(...args) {
+    static returnArrayOfDevs(...users) {
         let arrayOfDevs = [];
 
-        args.forEach(user => {
+        users.forEach(user => {
             if (user instanceof Dev) {
                 arrayOfDevs.push(user);
             }
