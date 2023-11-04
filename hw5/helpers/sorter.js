@@ -1,3 +1,5 @@
+
+/=======task 3 module helper=======/
 export default function sortBySalary(arrayOfDevs) {
    arrayOfDevs.sort((a, b) => {
       if(a.salary === b.salary){

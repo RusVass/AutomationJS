@@ -1,3 +1,4 @@
+/=======task 1 module employee=======/
 export class Employee {
     constructor (id, salary) {
         this.id = id;
