@@ -6,9 +6,10 @@ export class Dev extends Employee {
         super(id, salary)
 
     }
+    #jobType = `I am a Dev`
 
     getJobType() {
-        return `I am a Dev`
+        return this.#jobType
     }
 
     static returnArrayOfDevs(...users) {
