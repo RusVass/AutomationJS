@@ -3,13 +3,12 @@ import * as request from "./api_helper/api_helper.js";
 
 const baseUrl = "https://jsonplaceholder.typicode.com/posts/";
 
-// .Task1
+// Task 1.
 const getPost = await request.getPosts(baseUrl)
 console.log(getPost)
 
 const creatPost = await request.creatPosts(baseUrl)
 console.log(creatPost)
-
 
 //Task 2.
 async function getPostsByUsedId(url, userId) {
@@ -19,12 +18,10 @@ async function getPostsByUsedId(url, userId) {
     return filteredData;
 }
 
-
 const posts = await getPostsByUsedId(baseUrl, 5);
 console.log(posts); // маємо тільки пости юзера з id = 5, у яких нема title
 
 // Task 3.
-
 async function createNewPost(url, body) {
     const response = await fetch((url), {
         method: "post",
@@ -41,7 +38,6 @@ console.log(result); // повинен буди респонс у вигляді
 // Task 4.
 function resolveNumber() {
     let randomNumber = Math.floor(Math.random() * 10);
-
     let promise = new Promise((resolve, reject) => {
         setTimeout(() => {
            if(randomNumber >= 5){
@@ -51,13 +47,11 @@ function resolveNumber() {
             }
         }, 3000);
     });
-
     return promise.then(
         resolve => console.log(resolve)
     ).catch(
         reject => console.log(reject)
     )
 }
-
 
 resolveNumber()//далі обробка промісу, в консолі або, наприклад, Resolved 7, або Rejected 2 (в залежності від рандомно створенного числа)

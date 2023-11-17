@@ -1,5 +1,5 @@
 
-// import fetch from "node-fetch";
+import fetch from "node-fetch";
 
 //======= Get ======
  async function getPosts(url) {
