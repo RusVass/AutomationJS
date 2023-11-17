@@ -1,4 +1,4 @@
-
+import {user} from '../Posts/post.js'
 import fetch from "node-fetch";
 
 //======= Get ======
@@ -10,10 +10,9 @@ import fetch from "node-fetch";
 }
 // ====Post========
  async function creatPosts(url) {
-    const body = {};
     const response = await fetch((url), {
         method: "post",
-        body: JSON.stringify(body),
+        body: JSON.stringify(user),
         headers: {"Content-Type": "application/json"}
     })
         .then(res => res.json())

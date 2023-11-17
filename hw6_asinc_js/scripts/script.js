@@ -1,4 +1,4 @@
-import body from './Posts/post.js'
+import {body} from './Posts/post.js'
 import * as request from "./api_helper/api_helper.js";
 
 const baseUrl = "https://jsonplaceholder.typicode.com/posts/";
